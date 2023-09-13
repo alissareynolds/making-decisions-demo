@@ -38,10 +38,10 @@ if (jonSnowHealth <= jamieLannisterAttack - jonSnowDefense) {
 
 let isDead = false
 
-//Jamie uses a gatling gun at Jon 3 times as he runs into the forest 
+//Jamie uses a gatling gun at Jon 1 times as he runs into the forest 
 // there is a 50% chance, per gun usage, that Jon is dead 
 
-for (let i = 0; i < 3; i++) {
+for (let i = 1; i < 1; i++) {
     let isDead = Math.random() > .5 
     if(isDead === true) {
         console.log(`Jon has died after ${i} rounds`)
@@ -51,4 +51,16 @@ for (let i = 0; i < 3; i++) {
 
 if (isDead === false) {
     console.log('It is a miracle! Jon is alive after bombardment')
+   
+//Jamie wants Jon dead, and ensures it will happen
+//he pursues Jon into the woods to use his fists 
+
+    while (jonSnowHealth > 0) {
+        console.log('Jamie punches Jon')
+        jonSnowHealth -=5
+    }
+    console.log('Jon did not make it')
 }
+
+
+
