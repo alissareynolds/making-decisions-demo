@@ -14,3 +14,15 @@ if (jonSnowAttack > jamieLannisterAttack) {
 } else {
     console.log('Our fighters are evenly matched')
 }
+
+
+let jonSnowHealth = 100 
+let jonSnowDefense = 0 
+
+if (jonSnowHealth <= jamieLannisterAttack) {
+    console.log('Jon Snow is still alive')
+} else {
+    jonSnowHealth = jonSnowHealth - jamieLannisterAttack
+    console.log(`Jon Snows health is down to ${jonSnowHealth}`)
+}
+
